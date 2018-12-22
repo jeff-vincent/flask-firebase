@@ -1,4 +1,4 @@
-import requests
+import requests, json
 from flask import Flask, request, render_template, send_file
 
 app = Flask(__name__, static_folder="public", template_folder="public")
@@ -9,8 +9,11 @@ def render_index():
 
 @app.route('/sign-up', methods=['POST'])
 def sign_up():
-    return send_file('public/payload.json')
+    return json.dumps(request.json)
 
+@app.route('/log-in', methods=['POST'])
+def log_in():
+    return json.dumps(request.json) 
 
 if __name__ == '__main__':
     app.jinja_env.auto_reload = True

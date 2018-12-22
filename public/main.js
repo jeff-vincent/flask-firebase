@@ -9,11 +9,20 @@ function postData(url = ``, data = {}) {
     .then(response => console.log(response.json()));
 }
 
-function sendPost() {
+function signUp() {
     const email = document.getElementById('emailInput').value
     const userName = document.getElementById('userName').value
     const signUpData = {'email': email, 'userName': userName}
     postData(`http://0.0.0.0:5000/sign-up`, signUpData)
+    .then(data => console.log(JSON.stringify(data)))
+    .catch(error => console.error(error));
+}
+
+function logIn() {
+    const email = document.getElementById('emailInput').value
+    const userName = document.getElementById('userName').value
+    const logInData = {'email': email, 'userName': userName}
+    postData(`http://0.0.0.0:5000/log-in`, logInData)
     .then(data => console.log(JSON.stringify(data)))
     .catch(error => console.error(error));
 }
