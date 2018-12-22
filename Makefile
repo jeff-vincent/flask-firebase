@@ -1,2 +1,5 @@
 install:
-		sudo pip install -r requirements.txt 
+		sudo pip install -r requirements.txt
+
+run:
+		python main.py

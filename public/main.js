@@ -4,10 +4,9 @@ function postData(url = ``, data = {}) {
         headers: {
             "Content-Type": "application/json; charset=utf-8",
         },
-        mode: "cors",
         body: JSON.stringify(data),
     })
-    .then(response => response.json());
+    .then(response => console.log(response.json()));
 }
 
 function sendPost() {

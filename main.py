@@ -1,5 +1,5 @@
 import requests
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, send_file
 
 app = Flask(__name__, static_folder="public", template_folder="public")
 
@@ -7,9 +7,9 @@ app = Flask(__name__, static_folder="public", template_folder="public")
 def render_index():
     return render_template('index.html')
 
-@app.route('/signUp', methods=['POST'])
+@app.route('/sign-up', methods=['POST'])
 def sign_up():
-    print('post works')
+    return send_file('public/payload.json')
 
 
 if __name__ == '__main__':
