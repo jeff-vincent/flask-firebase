@@ -11,8 +11,8 @@ function postData(url = ``, data = {}) {
 
 function signUp() {
     const email = document.getElementById('emailInput').value
-    const userName = document.getElementById('userName').value
-    const signUpData = {'email': email, 'userName': userName}
+    const password = document.getElementById('password').value
+    const signUpData = {'email': email, 'password': password}
     postData(`http://0.0.0.0:5000/sign-up`, signUpData)
     .then(data => console.log(JSON.stringify(data)))
     .catch(error => console.error(error));
@@ -20,8 +20,8 @@ function signUp() {
 
 function logIn() {
     const email = document.getElementById('emailInput').value
-    const userName = document.getElementById('userName').value
-    const logInData = {'email': email, 'userName': userName}
+    const password = document.getElementById('password').value
+    const logInData = {'email': email, 'password': password}
     postData(`http://0.0.0.0:5000/log-in`, logInData)
     .then(data => console.log(JSON.stringify(data)))
     .catch(error => console.error(error));
