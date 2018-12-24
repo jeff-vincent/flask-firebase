@@ -1,2 +1,2 @@
-flask
-pyrebase
+Flask==1.0.2
+Pyrebase==3.0.27
