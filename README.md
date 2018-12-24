@@ -1,6 +1,6 @@
 # flask-firebase-js
 
-A simple template for integrating Firebase into a Flask project. 
+A simple template for integrating Firebase into a Flask project paired with a modern, unbiased JavaScript implementation. 
 
 ## To run locally:
 
