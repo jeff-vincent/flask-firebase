@@ -10,16 +10,21 @@
   <script type="text/javascript" src="/public/main.js"></script>
 </head>
 
-<body>
-    <div class="container">
-        <div class="row">
-            <input type="text" id="emailInput" placeholder="Enter your email"></input>
-            <input type="text" id="password" placeholder="Enter your password"></input>
+<body style="background-color: black">
+    <div class="container" style="background-color: black">
+  <div class="row">
+    <div class="jumbotron mt-5">
+      <h1>Example sign up and log in.</h1>
+              <div class="row">
+            <input type="text" id="emailInput" class="m-2" placeholder="Enter your email"></input>
+            <input type="text" id="password" class="m-2" placeholder="Enter your password"></input>
         </div>
         <div class="row">
-            <button id="sendPost" class="btn btn-outline-warning" onclick="signUp()">Sign Up</button>
-            <button id="sendPost" class="btn btn-outline-warning" onclick="logIn()">Log In</button>
+            <button id="sendPost" class="btn btn-outline-success m-2" onclick="signUp()">Sign Up</button>
+            <button id="sendPost" class="btn btn-outline-primary m-2" onclick="logIn()">Log In</button>
         </div>
-    </div>
+</div>
+</div>
+</div>
 </body>
 </html>
