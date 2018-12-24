@@ -1,4 +1,4 @@
-# flask-firebase
+# flask-firebase-js
 
 A simple template for integrating Firebase into a Flask project. 
 
