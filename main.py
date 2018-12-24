@@ -12,6 +12,7 @@ def render_index():
 @app.route('/sign-up', methods=['POST'])
 def sign_up():
     return base_api.sign_up(request)
+    
 
 @app.route('/log-in', methods=['POST'])
 def log_in():
