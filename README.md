@@ -12,7 +12,7 @@ Create and enter a [**virtualenv**](https://virtualenv.pypa.io/en/latest/) that 
 
 Install:
 ```bash
-cd flask-firebase && make install
+make install
 ```
 
 Run:
