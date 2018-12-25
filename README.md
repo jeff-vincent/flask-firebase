@@ -8,6 +8,7 @@ Clone the repo:
 ```bash
 git clone https://github.com/jeff-vincent/flask-firebase.git
 ```
+Create and enter a [**virtualenv**](https://virtualenv.pypa.io/en/latest/) that runs Python3.
 
 Install:
 ```bash
