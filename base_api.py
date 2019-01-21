@@ -2,12 +2,12 @@ import pyrebase
 from flask import jsonify
 
 config = {
-    "apiKey": "",
-    "authDomain": "",
-    "databaseURL": "",
-    "projectId": "",
-    "storageBucket": "",
-    "messagingSenderId": ""
+    "apiKey": "YOUR_API_KEY",
+    "authDomain": "YOUR_AUTHDOMAIN_KEY",
+    "databaseURL": "YOUR_DATABASE_URL_KEY",
+    "projectId": "YOUR_PROJECT_ID_KEY",
+    "storageBucket": "YOUR_STORAGE_BUCKET_KEY",
+    "messagingSenderId": "YOUR_MESSENGER_SENDER_ID"
 }
 
 firebase = pyrebase.initialize_app(config)

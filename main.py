@@ -1,4 +1,4 @@
-import requests, json
+import json
 from flask import Flask, request, render_template, send_file
 import base_api
 
