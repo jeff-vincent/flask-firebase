@@ -7,6 +7,15 @@ app = Flask(__name__, static_folder="public", template_folder="public")
 
 @app.route('/', methods=['GET'])
 def render_index():
+    """
+    Method for HTTP GET requests to "/"
+    Returns index.
+    Parameters:
+        Request: The HTTP request.
+        
+    Returns:
+        Rendered html: The index.html view.  
+    """
     return render_template('index.html')
 
 @app.route('/sign-up', methods=['POST'])
