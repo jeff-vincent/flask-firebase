@@ -8,7 +8,7 @@ app = Flask(__name__, static_folder="public", template_folder="public")
 @app.route('/', methods=['GET'])
 def render_index():
     """
-    Method for HTTP GET requests to "/"
+    Method for HTTP GET requests to '/'
     Returns index.
     Parameters:
         Request: The HTTP request.
@@ -20,6 +20,15 @@ def render_index():
 
 @app.route('/sign-up', methods=['POST'])
 def sign_up():
+    """
+    Method for HTTP GET requests to '/sign-up'
+    Returns user.
+    Parameters:
+        Request: The HTTP request.
+        
+    Returns:
+        New user object: The new user that was created.   
+    """
     return base_api.sign_up(request)
 
 @app.route('/log-in', methods=['POST'])
